@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container{
+    /* display: none; */
+}
+
+
+@keyframes sideDown {
+    0% {
+        margin-top: 0vw;
+        opacity: 0.1;
+    }
+
+    100% {
+        margin-top: 20%;
+        opacity: 1;
+    }
+}
+
+.card {
+    margin-top: 20%;
+    animation: sideDown 2s;
+    border-radius: 50px;
+}
