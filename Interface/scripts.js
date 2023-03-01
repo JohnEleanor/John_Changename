@@ -20,7 +20,7 @@ $(function () {
             $.post(`https://${GetParentResourceName()}/exit`,false);
         }
     });
-    
+
 
     $('#exitbtn').click(function(){
         $.post(`https://${GetParentResourceName()}/exit`,false);
@@ -28,6 +28,7 @@ $(function () {
         $('#fName_input').val('');
         $('#lName_input').val('');
     });
+    
 
 
 });
@@ -41,7 +42,7 @@ function playsound() {
 
 
 function confirm() {
-    playsound()
+    // playsound()
     var success = new Audio('sound/success.mp3');
     var wrong = new Audio('sound/wrong.mp3');
 
